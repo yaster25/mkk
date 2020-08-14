@@ -45,18 +45,18 @@
         &__link{
             color: inherit;            
             &:hover{
-                color: $color-yellow;
+                color: #FFD603;
             }          
             &.active{
-                color: $color-yellow;
+                color: #FFD603;
             }
             &.highlited{
-                color: $color-yellow;
+                color: #FFD603;
             }
         }
         &.hover{
             .nav-item__link{
-                color: $color-yellow;
+                color: #FFD603;
             }
         }
       
