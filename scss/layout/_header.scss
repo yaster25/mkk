@@ -9,6 +9,7 @@
 .header{
     z-index: 999;    
     position: relative;
+    border: 1px solid #EDEDED;
     .wrapper{
         @include flexbox;
         @include align-items(center);
