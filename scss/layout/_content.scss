@@ -1942,6 +1942,106 @@ $circle-width: 0.075em;
     }
 }
 
+.section-inside{
+    padding-top: 52px;
+}
+
+.text-b{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: $color-dark;
+}
+
+.block-links{
+    margin-bottom: 35px;
+    &-list{
+        width:50%;
+        display: inline-block;
+        vertical-align: top;
+            padding: 2px 0 2px 30px;
+        border-left: 6px solid $color-yellow;
+        font-size: 16px;
+        color: rgba(71, 77, 80, 0.6);
+        margin-right: -4px;
+        li{
+            padding-bottom: 15px;
+            &:last-child{
+                padding-bottom: 0;
+            }
+            a{
+                color: inherit;
+                &:hover{
+                    color: $color-yellow;
+                }
+            }
+        }
+    }
+}
+
+.text + .block-links{
+    padding-top: 70px;
+}
+
+.section-rules{
+    padding-bottom: 70px;
+    .title{
+        margin-bottom: 40px;
+    }
+}
+
+.pdf{
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: $color-yellow;
+    padding: 37px 40px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: $color-dark;
+    span{
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 21px;
+        color: #474D50;
+        display:block;
+        margin-top: 15px;
+    }
+    i{
+        display: block;
+        position: relative;
+        z-index: 2;
+        font-size: 62px;
+        margin-bottom: 30px;
+        &:after{
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 15px;
+            left: 10px;
+            background: #fff;
+            border-radius: 50%;
+            width: 38px;
+            height: 38px;
+        }
+    }
+    &_blue{
+        background: #D7EFF0;
+        i:after{
+            background: $color-yellow;
+        }
+    }
+}
+
+.text-title-2{
+    font-size: 24px;
+    line-height: 31px;
+    color: $color-dark;
+    margin-top: 75px;
+    margin-bottom: 45px;
+}
+
 
 @media screen and (max-width: 1140px){
     .top-form{
@@ -2537,6 +2637,39 @@ $circle-width: 0.075em;
     }
     .box-upload{
         padding: 50px 0;
+    }
+
+    .section-inside .title-box_left{
+        text-align: center;
+    }
+    .text-b{
+        text-align: center;
+    }
+    .text + .block-links {
+        padding-top: 40px;
+    }
+    .block-links {
+        margin-bottom: 0;
+    }
+    .section-rules{
+        padding-bottom: 65px;
+    }
+    .text-title-2 {
+        margin-top: 45px;
+        margin-bottom: 25px;
+    }
+    .pdf {
+        padding: 32px 30px 25px;
+        line-height: 22px;
+    }
+    .pdf i{
+        margin-bottom: 20px;
+    }
+    .pdf span{
+        margin-top: 10px;
+    }
+    .section-rules .text-b{
+        margin-top: -5px;
     }
 }
 
@@ -3216,6 +3349,43 @@ $circle-width: 0.075em;
     .inputfile + label {
         text-align: left;
         min-width: 120px;
+    }
+    
+
+    .text-b {
+        text-align: left;
+    }    
+    .block-links-list{
+        width: 100%;
+    }
+    .text + .block-links {
+        padding-top: 30px;
+    }
+    .block-links-list {
+        padding: 2px 0 8px 20px;
+        line-height: 20px;
+        &:last-child{
+            padding-bottom: 0;
+        }
+    }
+    .block-links-list li {
+        padding-bottom: 10px;
+    }
+    .section-rules {
+        padding-bottom: 40px;
+    }
+    .section-rules .title {
+        margin-bottom: 25px;
+    }
+    .text-title-2 {
+        margin-top: 35px;
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+    .section-rules .text-b {
+        margin-top: -10px;
     }
     
 }

@@ -70,6 +70,8 @@ input[type=submit], input[type=button], button { -webkit-appearance: none; outli
 
 .icon-camera:before { content: "\e90b"; }
 
+.icon-pdf:before { content: "\e90c"; }
+
 /* Slider */
 .slick-slider { position: relative; display: block; box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
 
@@ -1487,6 +1489,31 @@ ul { list-style: none; }
 .custom-input { padding-top: 20px; text-align: center; }
 .custom-input_mobile { display: none; }
 
+.section-inside { padding-top: 52px; }
+
+.text-b { font-weight: 500; font-size: 18px; line-height: 23px; color: #363636; }
+
+.block-links { margin-bottom: 35px; }
+.block-links-list { width: 50%; display: inline-block; vertical-align: top; padding: 2px 0 2px 30px; border-left: 6px solid #FFE24F; font-size: 16px; color: rgba(71, 77, 80, 0.6); margin-right: -4px; }
+.block-links-list li { padding-bottom: 15px; }
+.block-links-list li:last-child { padding-bottom: 0; }
+.block-links-list li a { color: inherit; }
+.block-links-list li a:hover { color: #FFE24F; }
+
+.text + .block-links { padding-top: 70px; }
+
+.section-rules { padding-bottom: 70px; }
+.section-rules .title { margin-bottom: 40px; }
+
+.pdf { display: block; height: 100%; width: 100%; background: #FFE24F; padding: 37px 40px; font-weight: 500; font-size: 18px; line-height: 24px; color: #363636; }
+.pdf span { font-weight: normal; font-size: 16px; line-height: 21px; color: #474D50; display: block; margin-top: 15px; }
+.pdf i { display: block; position: relative; z-index: 2; font-size: 62px; margin-bottom: 30px; }
+.pdf i:after { content: ""; position: absolute; z-index: -1; top: 15px; left: 10px; background: #fff; border-radius: 50%; width: 38px; height: 38px; }
+.pdf_blue { background: #D7EFF0; }
+.pdf_blue i:after { background: #FFE24F; }
+
+.text-title-2 { font-size: 24px; line-height: 31px; color: #363636; margin-top: 75px; margin-bottom: 45px; }
+
 @media screen and (max-width: 1140px) { .top-form { width: 495px; }
   .tf-tab { padding-left: 30px; padding-right: 30px; }
   .tf-bottom { margin: 0 -30px; padding: 30px 30px; }
@@ -1631,7 +1658,17 @@ ul { list-style: none; }
   .step__bottom { padding-top: 70px; }
   .step__bottom p { margin-bottom: 25px; }
   .step .col-3 { width: 25%; }
-  .box-upload { padding: 50px 0; } }
+  .box-upload { padding: 50px 0; }
+  .section-inside .title-box_left { text-align: center; }
+  .text-b { text-align: center; }
+  .text + .block-links { padding-top: 40px; }
+  .block-links { margin-bottom: 0; }
+  .section-rules { padding-bottom: 65px; }
+  .text-title-2 { margin-top: 45px; margin-bottom: 25px; }
+  .pdf { padding: 32px 30px 25px; line-height: 22px; }
+  .pdf i { margin-bottom: 20px; }
+  .pdf span { margin-top: 10px; }
+  .section-rules .text-b { margin-top: -5px; } }
 @media screen and (max-width: 740px) { .wrapper { padding: 0 20px; }
   .row { margin: 0 -10px -20px; }
   .col { padding: 0 10px 20px; }
@@ -1802,7 +1839,17 @@ ul { list-style: none; }
   .box-upload__col { width: 100%; padding: 30px 15px 23px; text-align: center; border: 1px solid #EDEDED; margin-bottom: 20px; }
   .fu-info img { margin-bottom: 10px; }
   .custom-input_mobile { display: block; padding-top: 7px; }
-  .inputfile + label { text-align: left; min-width: 120px; } }
+  .inputfile + label { text-align: left; min-width: 120px; }
+  .text-b { text-align: left; }
+  .block-links-list { width: 100%; }
+  .text + .block-links { padding-top: 30px; }
+  .block-links-list { padding: 2px 0 8px 20px; line-height: 20px; }
+  .block-links-list:last-child { padding-bottom: 0; }
+  .block-links-list li { padding-bottom: 10px; }
+  .section-rules { padding-bottom: 40px; }
+  .section-rules .title { margin-bottom: 25px; }
+  .text-title-2 { margin-top: 35px; margin-bottom: 10px; font-size: 18px; font-weight: 500; line-height: 24px; }
+  .section-rules .text-b { margin-top: -10px; } }
 @media screen and (max-width: 639px) { .loyal .col-4 { width: 100%; }
   .item-loyal { display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; padding: 28px 10px 28px 20px; }
   .item-loyal__title { width: calc(100% - 60px); padding-left: 25px; }

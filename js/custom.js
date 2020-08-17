@@ -704,4 +704,16 @@ $(document).ready(function(){
         $('.input-preview').jPreview();
    }
     
+    $('.scroll').click(function() { 
+		  var target = $(this.hash);
+		  if (target.length) {
+			var tt= target.offset().top;						 		 
+			$('html, body').animate({
+			  scrollTop: tt
+			}, 1500);			
+			return false;
+		  }	   
+	  });
+    
+    
  });
