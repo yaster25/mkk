@@ -2058,7 +2058,6 @@ $circle-width: 0.075em;
 .section-faq{
     border-top: 1px solid #EDEDED;
 }
-
 .faq-title{
     @include flexbox;
     @include align-items(flex-end);
@@ -2171,10 +2170,8 @@ $circle-width: 0.075em;
                 + .text-title{
                     padding-top: 20px;
                 }
-            }
-            
-        }
-        
+            }            
+        }        
     }
     &.active{
         &:before{
@@ -2203,7 +2200,6 @@ $circle-width: 0.075em;
         }
     }
 }
-
 .block-consult{
     background: url('../img/bg-block-consult.png') no-repeat center right #fff;
     padding: 60px 340px 50px 40px;
@@ -2211,7 +2207,6 @@ $circle-width: 0.075em;
     max-width: 810px;
     margin: 0 auto;
 }
-
 .block-why{}
 .item-why{
     border: 1px solid #EDEDED;
@@ -2245,10 +2240,56 @@ $circle-width: 0.075em;
         margin-bottom: 30px;
     }
 }
-
 .section-top-05{
     .title-2{
         width: 540px;
+    }
+}
+.block-card{
+    @include flexbox;
+    background: #fff;
+    &__left{
+        width: 490px;
+        background: url('../img/image-card.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    &__right{
+        width: calc(100% - 490px);
+        padding: 48px 65px;
+    }
+}
+.item-card{
+    @include flexbox;
+    @include align-items(center);
+    min-height: 42px;
+    margin-bottom: 40px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+    &__num{
+        font-weight: 600;
+        font-size: 48px;
+        width: 80px;
+        position: relative;
+        z-index: 2;
+        &:before{
+            content: "";
+            position: absolute;
+            z-index: -1;
+            width: 38px;
+            height: 38px;
+            background: $color-yellow;
+            border-radius: 50%;
+            top: -5px;
+            left: 10px;
+        }
+    }
+    &__text{
+        width: calc(100% - 80px);
+        font-size: 16px;
+        line-height: 21px;
+
+        color: rgba(71, 77, 80, 0.6);
     }
 }
 
@@ -2356,6 +2397,10 @@ $circle-width: 0.075em;
     .step{
         padding-left: 40px;
         padding-right: 40px;
+    }
+
+    .block-card__right{
+        padding: 40px 50px;
     }
 }
 
@@ -2935,7 +2980,26 @@ $circle-width: 0.075em;
         margin-top: 5px;
         margin-bottom: 10px;
     }
-    
+    .block-card__left{
+        width: 300px;
+    }
+    .block-card__right {
+        padding: 40px 28px;
+        width: calc(100% - 300px);
+    }
+    .item-card__num{
+        width: 70px;
+    }
+    .item-card__text {
+        width: calc(100% - 70px);
+            line-height: 20px;
+        br{
+            display:none;
+        }
+    }
+    .item-card{
+        margin-bottom: 32px;
+    }
 }
 
 @media screen and (max-width: 740px)  {
@@ -3696,8 +3760,7 @@ $circle-width: 0.075em;
     }
     .faq-item__content {
         padding: 35px 0 15px;
-    }
-   
+    } 
     
     .block-consult {       
         background: url(../img/bg-block-consult-m.png) no-repeat top right #fff;
@@ -3728,6 +3791,38 @@ $circle-width: 0.075em;
     }
     .item-why-us {
         padding: 27px 20px 22px;
+    }
+    .block-how:last-child {
+        margin-bottom: -50px;
+    }
+    .block-card{
+        @include flex-wrap(wrap);
+    }
+    .block-card__left {
+        width: 100%;
+            height: 280px;
+    }
+    .block-card__right {
+        width: 100%;
+        padding: 45px 28px;
+    }
+    .item-card{
+        @include flex-wrap(wrap);
+        text-align: center;
+        margin-bottom: 42px;
+        &__num{
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        &__text{
+            width: 100%;
+        }
+    }
+    .item-card__num:before {    
+        left: 50%;
+        width: 44px;
+        height: 44px;
+        margin-left: -15px;
     }
     
 }
