@@ -515,7 +515,17 @@ $(document).ready(function(){
                     slidesToScroll: 1, 
                     fade:true,
                 }
+            },
+            {
+                breakpoint: 741,
+                settings: {
+                    slidesToShow:1,
+                    slidesToScroll: 1, 
+                    fade:true,
+                    adaptiveHeight:true
+                }
             }
+            
         ]
     };
     $i_slider.slick(i_slider_settings);
@@ -559,6 +569,15 @@ $(document).ready(function(){
                     slidesToShow:1,
                     slidesToScroll: 1, 
                     fade:true,
+                }
+            },
+            {
+                breakpoint: 741,
+                settings: {
+                    slidesToShow:1,
+                    slidesToScroll: 1, 
+                    fade:true,
+                    adaptiveHeight:true
                 }
             }
         ]
@@ -604,6 +623,15 @@ $(document).ready(function(){
                     slidesToShow:1,
                     slidesToScroll: 1, 
                     fade:true,
+                }
+            },
+            {
+                breakpoint: 741,
+                settings: {
+                    slidesToShow:1,
+                    slidesToScroll: 1, 
+                    fade:true,
+                    adaptiveHeight:true
                 }
             }
         ]

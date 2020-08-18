@@ -771,6 +771,9 @@ ul {
         &-3{
             background-image: url('../img/bg-instruction-03.png');
         }
+        &-4{
+            background-image: url('../img/bg-instruction-04.png');
+        }
     }
     &__right{
         width: calc(100% - 400px);
@@ -818,6 +821,7 @@ ul {
 .i-list{
     max-width: 585px;
     &.no-steps{
+        max-width: 100%;
         .i-list-item{
             &:before, 
             &:after{
@@ -830,6 +834,7 @@ ul {
         position: relative;
         @include flexbox;
         padding-right: 50px;
+        padding-bottom: 30px;
         &__icon{
             width: 50px;
         }
@@ -1988,6 +1993,12 @@ $circle-width: 0.075em;
     .title{
         margin-bottom: 40px;
     }
+    &:last-child{
+        padding-bottom: 0;
+    }
+    .text-b{
+        margin-top: -5px;
+    }
 }
 
 .pdf{
@@ -2671,6 +2682,10 @@ $circle-width: 0.075em;
     .section-rules .text-b{
         margin-top: -5px;
     }
+
+    .block-instruction__left-4{
+            background-size: 100%;
+    }
 }
 
 @media screen and (max-width: 740px)  {
@@ -2917,6 +2932,10 @@ $circle-width: 0.075em;
         padding: 6px 6px;
         font-size: 14px;
         line-height: 18px;
+        @include flexbox;
+        @include align-items(center);
+        @include justify-content(center);
+        min-height: 50px;
     }
     .tabs-list__item.active {
         margin-top: 5px;
@@ -2936,9 +2955,9 @@ $circle-width: 0.075em;
     .block-instruction__right {
         position: relative;
         width: 100%;
-        min-height: 0;
         padding: 0px 20px 20px 20px;
-        height: 195px;
+        min-height: 195px;
+        height: auto;
         margin-top: -10px;
     }
     .i-list{
@@ -2946,6 +2965,7 @@ $circle-width: 0.075em;
     }
     .i-list-item{
         padding-top: 0;
+        padding-bottom: 0;
     }
     .block-instruction__left-1{
         background: url(../img/bg-instruction-m.png) no-repeat bottom left;
@@ -2955,6 +2975,9 @@ $circle-width: 0.075em;
     }
     .block-instruction__left-3{
         background: url(../img/bg-instruction-03-m.png) no-repeat bottom left;
+    }
+    .block-instruction__left-4{
+        background: url(../img/bg-instruction-04-m.png) no-repeat bottom left;
     }
     .i-list-item__icon {
         margin: 0 auto 15px;
@@ -3386,6 +3409,9 @@ $circle-width: 0.075em;
     }
     .section-rules .text-b {
         margin-top: -10px;
+    }
+    .tabs-list__item.active{
+        min-height: 55px;
     }
     
 }
