@@ -1062,7 +1062,6 @@ $circle-width: 0.075em;
         width: 60px;
         height: 60px;
         margin-bottom: 35px;
-        margin-left: -10px;
         img{
             max-width:100%;
             max-height:100%;
@@ -1541,6 +1540,10 @@ $circle-width: 0.075em;
         &-04{
             margin-left: -70px;
             bottom: 0;
+        }
+        &-05{
+            margin-left: -70px;
+            bottom: -165px;
         }
     }
     &__inner{
@@ -2209,6 +2212,45 @@ $circle-width: 0.075em;
     margin: 0 auto;
 }
 
+.block-why{}
+.item-why{
+    border: 1px solid #EDEDED;
+    height: 100%;
+    padding: 50px 30px;
+    @include flexbox;
+    @include align-items(center);
+    &__img{
+        width: 100px;
+    }
+    &__text{
+        width: calc(100% - 100px);
+        font-size: 16px;
+        line-height: 21px;
+        color: rgba(71, 77, 80, 0.6);
+        span{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 24px;
+            color: $color-dark;
+            display: block;
+            padding-bottom: 15px;
+        }
+    }
+}
+.block-bonus{
+    margin-top: 55px;
+        margin-bottom: 20px;
+    .item-why-us__icon {
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+}
+
+.section-top-05{
+    .title-2{
+        width: 540px;
+    }
+}
 
 
 @media screen and (max-width: 1140px){
@@ -2855,6 +2897,45 @@ $circle-width: 0.075em;
         padding: 35px 230px 30px 30px;
         height: 367px;        
     }
+
+    .section-top__img-05 {
+        margin-left: -130px;
+        width: 530px;
+        bottom: -120px;
+    }
+    .section-top-05 .title-2 {
+        max-width: 330px;
+        margin-top: -20px;
+    }
+    .section-top-05 .section-top__text {
+        max-width: 320px;
+    }
+    .item-why {       
+        @include flex-wrap(wrap);
+        padding: 25px 30px;
+    }
+    .item-why__text{
+        width: 100%;
+            margin-top: 16px;
+    }
+    .item-why__text span{
+        padding-bottom: 10px;
+    }
+    .block-bonus {
+        margin-top: 35px;
+        margin-bottom: 15px;
+        .col-4{
+            width: 50%;
+            &:nth-child(3){
+                width: 100%;
+            }
+        }
+    }
+    .block-bonus .item-why-us__icon {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    
 }
 
 @media screen and (max-width: 740px)  {
@@ -3630,6 +3711,25 @@ $circle-width: 0.075em;
             width: 100%;
         }
     }
+    .section-top__img-05 {
+        margin-left: -150px;
+        width: 265px;
+        bottom: 0;
+    }
+    .item-why {
+        padding: 25px 17px 25px 20px;
+    }
+    .block-bonus .col-4 {
+        width: 100%;
+    }
+    .block-bonus {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .item-why-us {
+        padding: 27px 20px 22px;
+    }
+    
 }
 
 @media screen and (max-width: 639px) {
