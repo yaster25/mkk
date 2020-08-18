@@ -743,5 +743,38 @@ $(document).ready(function(){
 		  }	   
 	  });
     
+    $('.faq-item__title').on('click', function(){
+        $(this).parents('.faq-item').toggleClass('active');
+        $(this).next('.faq-item__content').slideToggle();
+        return false;
+    });
+    
+    $('.form-consult').each(function() {  
+        $(this).validate({       
+             errorElement:'div',
+             errorPlacement: function(error, element) {
+                element.parent().append(error);
+            },
+                rules: {
+                    phone: "required",
+                     name: "required",
+                     comment: "required",
+                },
+                messages: {
+                    phone: "Необходимо заполнить «Телефон».",
+                    name: "Необходимо заполнить «Имя».",
+                    comment: "Необходимо заполнить поле «Вопрос».",
+                },
+                submitHandler: function(form){
+                    $.fancybox.close();
+                    $.fancybox.open({
+                        src  : '#popup-callback-thank',
+                        type : 'inline',
+                         touch: false,
+
+                    });
+                }
+         });
+    });
     
  });
