@@ -1651,7 +1651,7 @@ $circle-width: 0.075em;
 .slider-nav{
     .title{
         margin-bottom: 0;
-        max-width: calc(100% - 102px);
+        max-width: calc(100% - 122px);
     }
 }
 
@@ -2486,6 +2486,122 @@ $circle-width: 0.075em;
 .block-actions + .pagination{
     margin-top: -55px;
 }
+.action{
+    @include flexbox;
+    margin: 0 -30px;
+    &__left{
+        width: 53.7%;
+        padding: 10px 30px;
+        img{
+            max-width:100%;
+        }
+        .title-box{
+            display: none;
+        }
+    }
+    &__right{
+        width: 46.3%;
+        padding: 0 30px;
+    }
+    .block-why-us__form{
+        max-width: 400px;
+    }
+    .text{
+        margin-bottom: 45px;
+    }
+}
+.timer-box-2{
+    margin-bottom:50px;
+    p{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+        color: $color-dark;
+        margin-bottom: 40px;
+    }
+    &:after{
+        content: "";
+        clear: both;
+        display: block;
+    }
+}
+
+.countdown-holding span {
+	color: #888;
+}
+.countdown-row {
+	clear: both;
+	width: 100%;
+	padding: 0px;
+	text-align: center;
+}
+.countdown-show1 .countdown-section {
+	width: 98%;
+}
+.countdown-show2 .countdown-section {
+	width: 48%;
+}
+.countdown-show3 .countdown-section {
+	width: 32.5%;
+}
+.countdown-show4 .countdown-section {
+	width: 24.5%;
+}
+.countdown-show5 .countdown-section {
+	width: 19.5%;
+}
+.countdown-show6 .countdown-section {
+	width: 16.25%;
+}
+.countdown-show7 .countdown-section {
+	width: 14%;
+}
+.countdown-section {
+	display: block;
+	float: left;
+	font-size: 75%;
+	text-align: center;
+    position:relative;
+    z-index: 2;
+    &:before{
+        position: absolute;
+        content: "";
+        background: $color-yellow;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        top: -12px; left: 10px;
+        z-index: -1;
+    }
+}
+.countdown-amount {
+    font-weight: 600;
+    font-size: 60px;
+    text-align: center;
+    color: $color-dark;
+    position: relative;
+    z-index: 3;
+}
+.countdown-period {
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    color: $color-dark;
+    text-transform:lowercase;
+    display: block;
+    margin-top:-6px;
+}
+.countdown-descr {
+	display: block;
+	width: 100%;
+}
+
+.slider-wrapper_actions{
+    .slider-nav{
+        margin-bottom: 70px;
+    }
+}
+
 
 
 @media screen and (max-width: 1140px){
@@ -2607,6 +2723,12 @@ $circle-width: 0.075em;
     .item-action__bottom{
         left: 30px;
         padding-right: 30px;
+    }
+    .action__left{
+        width: 50%;
+    }
+    .action__right{
+        width: 50%;
     }
 }
 
@@ -3261,6 +3383,43 @@ $circle-width: 0.075em;
         margin-top: -25px;
     }    
     
+
+    .action__left .title-box{
+        display: block;
+        br{
+            display:none;
+        }
+    }
+    .action__right .title-box{
+        display: none;
+    }
+    .action{
+        @include flex-wrap(wrap);
+        &__left{
+            width: 100%;
+            padding: 0 30px 40px;
+        }
+        &__right{
+            width: 100%;
+        }
+    }
+    .action__left img {
+        max-width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+    .timer-box-2{
+        text-align: center;
+            margin: 0 auto 50px;
+        max-width: 500px;
+    }
+    .action .block-why-us__form{
+        margin: 0 auto;
+    }
+
+    .slider-wrapper_actions .slider-nav {
+        margin-bottom: 40px;
+    }
 }
 
 @media screen and (max-width: 740px)  {
@@ -4132,6 +4291,39 @@ $circle-width: 0.075em;
         margin-right: -3px;
     }
     
+
+    .action__left {
+        width: 100%;
+        padding: 0 10px 35px;
+    }
+    .countdown-amount{
+        font-size: 40px;
+    }
+    .countdown-period{
+        font-size: 12px;
+            margin-top: -3px;
+    }
+    .timer-box-2 p{
+        margin-bottom: 30px;
+    }
+    .countdown-section:before {width: 36px; height: 36px; border-radius: 50%; top: -8px; left: 0}
+    .timer-box-2 {
+        margin: 0 auto 30px;
+    }
+    .action .text {
+        margin-bottom: 35px;
+    }
+    .slider-wrapper_actions{
+        .slider-nav{
+            @include flex-wrap(wrap);
+            @include justify-content(center);
+        }
+        .slider-nav .title {
+            margin-bottom: 035px;
+            max-width: 100%;
+            width: 100%;
+        }
+    }
 }
 
 @media screen and (max-width: 639px) {

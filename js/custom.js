@@ -806,5 +806,45 @@ $(document).ready(function(){
       }
     });
     
+    if($('#timer-action').length){
+        var someDate = new Date();
+        var numberOfDaysToAdd = 5;
+        someDate.setDate(someDate.getDate() + numberOfDaysToAdd); 
+        someDate.setHours(0,0,0,0);        
+        $('#timer-action').countdown({until: someDate, padZeroes: true});    
+    }
+    
+    $('.js-slider-other').each(function () {
+          $(this).slick({
+            infinite: true,
+            arrows:true,
+            dots:false,
+            slidesToShow:3,
+            slidesToScroll: 1,
+            appendArrows: $(this).parents('.slider-wrapper').find('.slider-arrows'),
+            swipeToSlide:true,
+            centerMode:false,
+            fade:false,
+            responsive: [   
+                 {
+                  breakpoint: 992,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                  }
+                },
+                {
+                  breakpoint: 640,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                      appendArrows: $(this).parents('.slider-wrapper').find('.slider-arrows'),
+                  }
+                }
+              ]
+        });
+    });
+    
+    
     
  });
