@@ -777,4 +777,34 @@ $(document).ready(function(){
          });
     });
     
+    var $a_slider = $('.js-slider-actions');
+    var a_slider_settings = {
+        infinite: true,
+        arrows:true,
+        dots:false,        
+        slidesToShow:1,
+        slidesToScroll: 1, 
+        responsive: [
+            {
+                breakpoint: 9999,
+                settings:"unslick" 
+            },
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow:1,
+                    slidesToScroll: 1
+                }
+            }
+            
+        ]
+    };
+    $a_slider.slick(a_slider_settings);
+    $(window).on('resize', function() {
+      if (!$a_slider.hasClass('slick-initialized')) {
+        return $a_slider.slick(a_slider_settings);
+      }
+    });
+    
+    
  });
