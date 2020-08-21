@@ -845,6 +845,37 @@ $(document).ready(function(){
         });
     });
     
+    $('.js-slider-partners').each(function () {
+          $(this).slick({
+            infinite: true,
+            arrows:true,
+            dots:false,
+            slidesToShow:5,
+            slidesToScroll: 1,
+            appendArrows: $(this).parents('.slider-wrapper').find('.slider-arrows'),
+            swipeToSlide:true,
+            centerMode:false,
+            fade:false,
+            responsive: [   
+                 {
+                  breakpoint: 992,
+                  settings: {
+                    slidesToShow:3,
+                    slidesToScroll: 1,
+                  }
+                },
+                {
+                  breakpoint: 640,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                      appendArrows: $(this).parents('.slider-wrapper').find('.slider-arrows'),
+                  }
+                }
+              ]
+        });
+    });
+    
     
     
  });

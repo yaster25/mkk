@@ -13,4 +13,5 @@ index.html<br>
 10-получение-на-карту.html<br>
 11-акции.html<br>
 12-акция.html<br>
+13-о-нас.html<br>
 
