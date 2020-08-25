@@ -777,6 +777,40 @@ $(document).ready(function(){
          });
     });
     
+    $('.form-consult-2').each(function() {  
+        $(this).validate({       
+             errorElement:'div',
+             errorPlacement: function(error, element) {
+                element.parent().append(error);
+            },
+                rules: {
+                    phone: "required",
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                     comment: "required",
+                },
+                messages: {
+                    email: {
+                        required: "Необходимо заполнить «E-mail».",
+                        email: "Введите корректный E-mail."
+                    },
+                    name: "Необходимо заполнить «Имя».",
+                    comment: "Необходимо заполнить поле «Отзыв».",
+                },
+                submitHandler: function(form){
+                    $.fancybox.close();
+                    $.fancybox.open({
+                        src  : '#popup-callback-thank',
+                        type : 'inline',
+                         touch: false,
+
+                    });
+                }
+         });
+    });
+    
     var $a_slider = $('.js-slider-actions');
     var a_slider_settings = {
         infinite: true,

@@ -15,4 +15,5 @@ index.html<br>
 12-акция.html<br>
 13-о-нас.html<br>
 14-контакты.html<br>
+15-отзывы.html<br>
 

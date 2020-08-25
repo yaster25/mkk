@@ -1331,6 +1331,7 @@ $circle-width: 0.075em;
         @include flex-wrap(wrap);
         @include align-items(center);
         margin-bottom: 15px;
+        position: relative;
     }
     &__title{
         position: relative;
@@ -2710,6 +2711,47 @@ $circle-width: 0.075em;
     }
 }
 
+.block-reviews{
+    padding-bottom: 55px;
+}
+.item-review_list{
+    display: block;
+    border: 1px solid #EDEDED;
+    padding: 50px 40px 55px;
+    &:hover{
+        border-color:$color-dark;
+    }
+    .item-review__info{
+        width: 100%;
+    }
+    .item-review__top:before {
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: -15px;
+        width: 48px;
+        height: 48px;
+        background: url(../img/icon-reviews.svg) no-repeat;
+        background-size: contain;
+    }
+    .item-review__title:before {
+        display: none;
+    }
+    .item-review__top{
+        padding-left: 60px;
+        margin-bottom: 20px;
+    }
+    .item-review__title{
+        padding-left: 0;
+    }
+    
+}
+
+.block-consult-3{
+    background-image: url('../img/bg-block-consult-3.jpg');
+}
+
+
 @media screen and (max-width: 1140px){
     .top-form{
         width: 495px;
@@ -3539,6 +3581,29 @@ $circle-width: 0.075em;
         margin-bottom: 20px;
     }
     
+
+    .item-review_list {
+        padding: 25px 30px 30px;
+        .item-review__info i{
+               display: inline;
+        }
+        .item-review__info span{
+            display: block;
+                margin-top: 5px;
+        }
+    }
+    .item-review_list .item-review__top:before{
+        left: -10px;
+    }
+    .item-review_list .item-review__info {
+        padding-top: 8px;
+    }
+    .block-reviews {
+        padding-bottom: 50px;
+    }
+    .block-consult-3 {
+        background-image: url(../img/bg-block-consult-3-t.jpg);
+    }
 }
 
 @media screen and (max-width: 740px)  {
@@ -4519,6 +4584,29 @@ $circle-width: 0.075em;
 
     .list-map{
         margin-bottom: 30px;
+    }
+
+    .block-consult-3 {
+        background-image: url(../img/bg-block-consult-3-m.jpg);
+    }
+    .item-review_list .item-review__top:before {
+        width: 42px;
+        height: 42px;
+        left: 0;
+        top: -15px;
+    }
+    .item-review_list .item-review__info {
+        margin-left: -60px;
+        width: calc(100% + 60px);
+    }
+    .item-review_list .item-review__info i{
+        display: none;
+    }
+    .item-review_list .item-review__info span{
+        display: inline-block;
+    }
+    .block-reviews {
+        padding-bottom: 30px;
     }
 }
 
