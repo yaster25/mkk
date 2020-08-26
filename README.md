@@ -18,4 +18,5 @@ index.html<br>
 15-отзывы.html<br>
 16-отзыв.html<br>
 17-новости.html<br>
+18-новость.html<br>
 
