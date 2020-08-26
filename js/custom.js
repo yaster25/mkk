@@ -910,7 +910,13 @@ $(document).ready(function(){
         });
     });
     
-    
+    if($('.grid').length){
+        $('.grid').masonry({
+          // options
+          itemSelector: '.col',
+         percentPosition: true
+        });
+    }
     
     
     
