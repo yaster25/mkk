@@ -1860,6 +1860,16 @@ ul { list-style: none; }
 .section-404 .title { font-size: 70px; margin-bottom: 40px; }
 .section-404 .text-title { margin-top: 90px; margin-bottom: 25px; }
 
+.block-docs { margin-bottom: 55px; }
+
+.doc { position: relative; margin-left: 75px; border-bottom: 1px solid #EDEDED; min-height: 107px; margin-bottom: 50px; }
+.doc:last-child { margin-bottom: 0; }
+.doc:before { content: ""; position: absolute; top: 0; left: -83px; background: url("../img/icon-pdf.svg") no-repeat; background-size: cover; width: 58px; height: 58px; }
+.doc__title { font-weight: 500; font-size: 18px; line-height: 24px; margin-bottom: 12px; }
+.doc__title a { color: inherit; }
+.doc__title a:hover { color: #FFD603; }
+.doc__info { font-size: 16px; line-height: 21px; color: rgba(71, 77, 80, 0.6); margin-bottom: 20px; }
+
 @media screen and (max-width: 1140px) { .top-form { width: 495px; }
   .tf-tab { padding-left: 30px; padding-right: 30px; }
   .tf-bottom { margin: 0 -30px; padding: 30px 30px; }
@@ -2129,7 +2139,11 @@ ul { list-style: none; }
   .section-404 img { max-width: 520px; margin-top: -40px; }
   .section-404 .hr { width: 140px; height: 4px; margin: 10px auto 35px; }
   .section-404 .title { font-size: 50px; margin-bottom: 40px; }
-  .section-404 .text-title { margin-top: 70px; margin-bottom: 35px; } }
+  .section-404 .text-title { margin-top: 70px; margin-bottom: 35px; }
+  .doc:before { left: -75px; }
+  .doc__title { margin-bottom: 8px; }
+  .doc { min-height: 0; margin-bottom: 35px; }
+  .doc__info { margin-bottom: 35px; } }
 @media screen and (max-width: 740px) { .wrapper { padding: 0 20px; }
   .row { margin: 0 -10px -20px; }
   .col { padding: 0 10px 20px; }
@@ -2408,7 +2422,10 @@ ul { list-style: none; }
   .section-404 img { max-width: 280px; margin-top: 15px; }
   .section-404 .hr { width: 80px; height: 3px; margin: 16px auto 20px; }
   .section-404 .title { font-size: 24px; margin-bottom: 25px; }
-  .section-404 .text-title { margin-top: 25px; margin-bottom: 15px; } }
+  .section-404 .text-title { margin-top: 25px; margin-bottom: 15px; }
+  .doc { min-height: 0; margin-bottom: 0; text-align: center; padding: 78px 0 0; margin-left: 0; border: none; }
+  .doc:before { left: 50%; margin-left: -30px; top: 0; }
+  .block-docs { padding-top: 10px; margin-bottom: 35px; } }
 @media screen and (max-width: 639px) { .loyal .col-4 { width: 100%; }
   .item-loyal { display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; padding: 28px 10px 28px 20px; }
   .item-loyal__title { width: calc(100% - 60px); padding-left: 25px; }
