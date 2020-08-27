@@ -1084,7 +1084,7 @@ ul { list-style: none; }
 .block-how__col:nth-child(3) .item-how__num:before { top: -12px; margin-left: -50px; }
 
 .order-block { background: url("../img/bg-order-block.png") no-repeat top left #fff; border: 1px solid #EDEDED; height: 112px; width: 750px; max-width: 100%; margin: 0 auto; display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -moz-box-pack: justify; -ms-flex-pack: justify; -webkit-justify-content: space-between; justify-content: space-between; -webkit-box-align: end; -moz-box-align: end; -ms-flex-align: end; -webkit-align-items: flex-end; align-items: flex-end; padding: 30px 30px 30px 112px; }
-.order-block__title { font-weight: 500; font-size: 18px; line-height: 23px; max-width: 150px; padding-bottom: 5px; }
+.order-block__title { font-weight: 500; font-size: 18px; line-height: 23px; max-width: 150px; padding-bottom: 5px; text-align: left; }
 .order-block__input { width: 180px; }
 
 .form div.error { position: absolute; bottom: 14px; color: #df4e49; display: none; font-size: 13px; width: 100%; white-space: nowrap; }
@@ -1855,6 +1855,11 @@ ul { list-style: none; }
 .slider-other .item-action_blog-3 .item-action__img img { width: auto; height: 100%; }
 .slider-other .item-action_blog { padding-top: 205px; height: 100%; }
 
+.section-404 { text-align: center; }
+.section-404 .hr { width: 200px; height: 8px; margin: 55px auto 35px; background: #FFE24F; }
+.section-404 .title { font-size: 70px; margin-bottom: 40px; }
+.section-404 .text-title { margin-top: 90px; margin-bottom: 25px; }
+
 @media screen and (max-width: 1140px) { .top-form { width: 495px; }
   .tf-tab { padding-left: 30px; padding-right: 30px; }
   .tf-bottom { margin: 0 -30px; padding: 30px 30px; }
@@ -1904,7 +1909,9 @@ ul { list-style: none; }
   .news-single__bottom { -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-top: 45px; padding-top: 40px; }
   .share { margin-bottom: 40px; }
   .form-order { max-width: 100%; }
-  .order-block-2 .order-block__title { margin-bottom: 0; } }
+  .order-block-2 .order-block__title { margin-bottom: 0; }
+  .section-404 img { max-width: 600px; }
+  .section-404 .title { font-size: 60px; } }
 @media screen and (max-width: 991px) { .wrapper { padding: 0 40px; }
   .top-slider__inner { max-width: 100%; padding-top: 50px; text-align: center; }
   .top-form { top: 195px; right: 40px; width: 450px; }
@@ -2118,7 +2125,11 @@ ul { list-style: none; }
   .gallery { margin: 10px -10px 25px; }
   .list-num { margin-top: 0; padding-bottom: 0px !important; }
   .blog-single .share { margin-bottom: 20px; }
-  .blog-single .link-more { margin-bottom: 20px; } }
+  .blog-single .link-more { margin-bottom: 20px; }
+  .section-404 img { max-width: 520px; margin-top: -40px; }
+  .section-404 .hr { width: 140px; height: 4px; margin: 10px auto 35px; }
+  .section-404 .title { font-size: 50px; margin-bottom: 40px; }
+  .section-404 .text-title { margin-top: 70px; margin-bottom: 35px; } }
 @media screen and (max-width: 740px) { .wrapper { padding: 0 20px; }
   .row { margin: 0 -10px -20px; }
   .col { padding: 0 10px 20px; }
@@ -2393,7 +2404,11 @@ ul { list-style: none; }
   .gallery { margin-left: -5px; margin-right: -5px; }
   .list-num li { margin-bottom: 30px; }
   .text-quotes { padding-left: 60px; }
-  .text-quotes:before { width: 42px; height: 42px; } }
+  .text-quotes:before { width: 42px; height: 42px; }
+  .section-404 img { max-width: 280px; margin-top: 15px; }
+  .section-404 .hr { width: 80px; height: 3px; margin: 16px auto 20px; }
+  .section-404 .title { font-size: 24px; margin-bottom: 25px; }
+  .section-404 .text-title { margin-top: 25px; margin-bottom: 15px; } }
 @media screen and (max-width: 639px) { .loyal .col-4 { width: 100%; }
   .item-loyal { display: -webkit-box; display: -moz-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; padding: 28px 10px 28px 20px; }
   .item-loyal__title { width: calc(100% - 60px); padding-left: 25px; }

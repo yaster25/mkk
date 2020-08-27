@@ -563,7 +563,8 @@ ul {
         font-size: 18px;
         line-height: 23px;
         max-width: 150px;
-            padding-bottom: 5px;
+        padding-bottom: 5px;
+        text-align: left;
     }
     &__input{
         width: 180px;
@@ -3115,6 +3116,24 @@ $circle-width: 0.075em;
     }
 }
 
+.section-404{
+    text-align: center;
+    .hr{
+        width:200px;
+        height: 8px;
+        margin: 55px auto 35px;
+        background: $color-yellow;
+    }
+    .title{
+        font-size: 70px;
+        margin-bottom: 40px;
+    }
+    .text-title{
+        margin-top: 90px;
+        margin-bottom: 25px;
+    }
+}
+
 
 @media screen and (max-width: 1140px){
     .top-form{
@@ -3281,6 +3300,15 @@ $circle-width: 0.075em;
     }
     .order-block-2 .order-block__title{
         margin-bottom: 0;
+    }
+
+    .section-404{
+        img{
+            max-width:600px;
+        }
+    }
+    .section-404 .title{
+        font-size: 60px;
     }
 }
 
@@ -4108,6 +4136,27 @@ $circle-width: 0.075em;
     .blog-single .link-more{
         margin-bottom: 20px;
     }
+    .section-404{
+        img{
+            max-width:520px;
+                margin-top: -40px;
+        }
+    }
+    .section-404 .hr {
+        width: 140px;
+        height: 4px;
+        margin: 10px auto 35px;
+    }
+    .section-404 .title {
+        font-size: 50px;
+        margin-bottom: 40px;
+    }
+    .section-404 .text-title {
+        margin-top: 70px;
+        margin-bottom: 35px;
+    }
+    
+    
 }
 
 
@@ -5188,6 +5237,24 @@ $circle-width: 0.075em;
         width: 42px;
         height: 42px;
     }
+    .section-404 img {
+        max-width: 280px;
+        margin-top: 15px;
+    }
+    .section-404 .hr {
+        width: 80px;
+        height: 3px;
+        margin: 16px auto 20px;
+    }
+    .section-404 .title {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+    .section-404 .text-title {
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+    
 }
 
 @media screen and (max-width: 639px) {
