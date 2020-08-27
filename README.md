@@ -20,4 +20,5 @@ index.html<br>
 17-новости.html<br>
 18-новость.html<br>
 19-блог.html<br>
+20-блог-статья.html<br>
 

@@ -2414,6 +2414,15 @@ $circle-width: 0.075em;
             height: 100%;
             width: auto;
             display: block;
+            object-fit: cover;
+            @include transition($default-transition);
+        }
+        &:hover{
+            img{
+                transform:scale(1.05);
+                
+            }
+            
         }
     }
     &__box{
@@ -2430,6 +2439,9 @@ $circle-width: 0.075em;
         margin-bottom: 22px;
         a{
             color:inherit;
+            &:hover{
+                    color: #FFD603;
+            }
         }
     }
     &__bottom{
@@ -2930,6 +2942,18 @@ $circle-width: 0.075em;
         @include flexbox;
         @include justify-content(space-between);
         @include align-items(center);
+        .link-more{
+            display: inline-block;
+            span{
+                color: $color-yellow;
+            }
+            &:hover{
+                margin-right: -5px;
+                span{
+                    margin-right:0;
+                }
+            }
+        }
     }
 }
 
@@ -2991,9 +3015,105 @@ $circle-width: 0.075em;
     }
 }
 
+.gallery{
+    @include flexbox;
+    @include align-items(center);
+    @include flex-wrap(wrap);
+    margin: 30px -10px 55px;
+    &__col{
+        width: 20%;
+        padding: 0 10px 20px;
+        a{
+            display:block;
+            overflow: hidden;
+            img{
+                display:block;
+                width: 100%;
+                margin: 0;
+                @include transition($default-transition);
+            }
+            &:hover{
+                img{
+                    transform:scale(1.05);
+                }
+            }
+        }
+    }
+}
+
+.list-num{
+    counter-reset: section;
+    list-style-type: none;
+    margin-top: 22px;
+    padding-bottom: 25px !important;
+    li{
+        position: relative;
+        min-height: 47px;
+        padding-left: 80px;
+        margin-bottom: 40px;
+        @include flexbox;
+        @include align-items(center);
+        &:before{
+            position: absolute;
+            top: 14px;
+            left: 0;
+            font-weight: 600;
+            font-size: 48px;
+            color: $color-dark;
+            z-index: 2;
+            counter-increment: section;
+            content: counters(section, ".", decimal-leading-zero)
+        }
+        &:after{
+            z-index: 1;
+            content: "";
+            position: absolute;
+            top: -5px;
+            left: 10px;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: $color-yellow;
+        }
+    }
+}
+.text-quotes{
+    position: relative;
+    padding-left: 120px;   
+        &:before{
+                content: "";
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 84px;
+                height: 81px;
+                background: url(../img/icon-reviews.svg) no-repeat;
+            background-size: contain;
+        }
+}
 
 
-
+.slider-other {
+    .item-action_blog .item-action__img {
+        height: 260px;
+        overflow: hidden;
+        img{
+            width:100%;
+            height: auto;
+        }
+    }
+     .item-action_blog-3 .item-action__img {
+       
+        img{
+            width:auto;
+            height: 100%;
+        }
+    }
+    .item-action_blog{
+        padding-top: 205px;
+        height: 100%;
+    }
+}
 
 
 @media screen and (max-width: 1140px){
@@ -3971,6 +4091,23 @@ $circle-width: 0.075em;
     }
     
     
+
+    .gallery__col{
+        width: 25%;
+    }
+    .gallery {
+        margin: 10px -10px 25px;
+    }
+    .list-num {
+        margin-top: 0;
+        padding-bottom: 0px !important;
+    }
+    .blog-single .share{
+        margin-bottom: 20px;
+    }
+    .blog-single .link-more{
+        margin-bottom: 20px;
+    }
 }
 
 
@@ -5033,6 +5170,24 @@ $circle-width: 0.075em;
     }
     
     
+
+    .gallery__col{
+        padding: 0 5px 10px;
+    }
+    .gallery{
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    .list-num li{
+        margin-bottom: 30px;
+    }
+    .text-quotes{
+        padding-left: 60px;
+    }
+    .text-quotes:before{
+        width: 42px;
+        height: 42px;
+    }
 }
 
 @media screen and (max-width: 639px) {
@@ -5124,6 +5279,10 @@ $circle-width: 0.075em;
         }
     }   
         
+
+    .gallery__col{
+        width: 33.33%;
+    }
 }
 
 @media screen and (max-width: 479px) {  
@@ -5134,6 +5293,9 @@ $circle-width: 0.075em;
     .news-single__image img{
         height:250px;
         max-width: inherit;
+    }
+    .gallery__col{
+        width: 50%;
     }
 }
 
