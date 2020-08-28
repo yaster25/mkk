@@ -788,6 +788,9 @@ ul {
         &-6{
             background-image: url('../img/bg-instruction-06.png');
         }
+        &-7{
+            background-image: url('../img/bg-instruction-07.png');
+        }
     }
     &__right{
         width: calc(100% - 400px);
@@ -3383,6 +3386,14 @@ $circle-width: 0.075em;
     margin-left: 185px;
     width: 390px;
 }
+.list-column{
+    column-count: 2;
+}
+.section-top__img-09{
+    top: 90px;
+    margin-left: -260px;
+}
+
 
 
 @media screen and (max-width: 1140px){
@@ -4512,6 +4523,18 @@ $circle-width: 0.075em;
         margin-left: 10px;
     }
     .block-instruction__left-6 {
+        background-size: 310px;
+        background-position: left bottom;
+    }
+
+
+   .section-top__img-09 {
+        top: 160px;
+        width: 620px;
+        margin-left: -50px;
+
+    }
+    .block-instruction__left-7 {
         background-size: 310px;
         background-position: left bottom;
     }
@@ -5739,7 +5762,15 @@ $circle-width: 0.075em;
         background-image: url(../img/bg-instruction-06-m.png);
         background-size: auto;
     }
-    
+   .section-top__img-09 {
+        width: 440px;
+        top: 140px;
+        margin-left: -180px;
+    }
+    .block-instruction__left-7 {
+        background-image: url(../img/bg-instruction-07-m.png);
+        background-size: auto;
+    }
 }
 
 @media screen and (max-width: 639px) {
