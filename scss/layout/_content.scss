@@ -785,6 +785,9 @@ ul {
         &-5{
             background-image: url('../img/bg-instruction-05.png');
         }
+        &-6{
+            background-image: url('../img/bg-instruction-06.png');
+        }
     }
     &__right{
         width: calc(100% - 400px);
@@ -3371,6 +3374,15 @@ $circle-width: 0.075em;
     bottom: 0;
     margin-left: 0;
 }
+.section-top__img-08{
+    top: 40px;
+    margin-left: -55px;
+}
+.section-top__img-08-2 {
+    bottom: -35px;
+    margin-left: 185px;
+    width: 390px;
+}
 
 
 @media screen and (max-width: 1140px){
@@ -4492,6 +4504,15 @@ $circle-width: 0.075em;
     }
     .block-instruction__left-5 {
         background-size: 315px;
+        background-position: left bottom;
+    }
+
+    .section-top__img-08{
+        top: 140px;
+        margin-left: 10px;
+    }
+    .block-instruction__left-6 {
+        background-size: 310px;
         background-position: left bottom;
     }
 }
@@ -5709,6 +5730,15 @@ $circle-width: 0.075em;
         background-size: auto;
     }
     
+    .section-top__img-08{
+        width: 320px;
+        top: 120px;
+        margin-left: -110px;
+    }
+    .block-instruction__left-6 {
+        background-image: url(../img/bg-instruction-06-m.png);
+        background-size: auto;
+    }
     
 }
 
