@@ -394,6 +394,11 @@ ul {
     @include flexbox;
     @include justify-content(space-between);
     @include align-items(center);
+    p{
+        font-size: 14px;
+        line-height: 18px;
+        max-width: 245px;
+    }
 }
 .timer-box{
     min-height: 48px;
@@ -522,7 +527,7 @@ ul {
         font-size: 16px;
         line-height: 21px;
         color: rgba(71, 77, 80, 0.6);
-        max-width: 270px;
+        max-width: 280px;
         margin: 0 auto;
         span{
             font-weight: 500;
@@ -776,6 +781,9 @@ ul {
         }
         &-4{
             background-image: url('../img/bg-instruction-04.png');
+        }
+        &-5{
+            background-image: url('../img/bg-instruction-05.png');
         }
     }
     &__right{
@@ -3317,6 +3325,52 @@ $circle-width: 0.075em;
         margin-bottom: 0;
     }
 }
+.text-calc{
+    @include flexbox;
+    &__left{
+        width: 44.5%;
+        padding-right: 80px;
+    }
+     &__right{
+            width: 55.5%;
+    }
+    .text-b{
+        padding-bottom: 15px;
+    }
+}
+.calc-form{
+    background: #fff;
+    padding: 50px 60px 5px;
+    &__title{
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 28px;
+        text-align: center;
+        text-transform: capitalize;
+        color: $color-dark;
+        margin-bottom: 45px;
+    }
+    &__car{
+       margin-bottom: -12px;
+    }
+    .tf-list:nth-child(n) {
+        width: 230px;
+    }
+}
+
+.section-top-7{
+    .section-top__text{
+        max-width: 300px;
+    }
+}
+.section-top__img-07{
+    top: 145px;
+    margin-left: -210px;
+}
+.section-top__img-07-2{
+    bottom: 0;
+    margin-left: 0;
+}
 
 
 @media screen and (max-width: 1140px){
@@ -3493,6 +3547,17 @@ $circle-width: 0.075em;
     }
     .section-404 .title{
         font-size: 60px;
+    }
+
+    .calc-form{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .calc-form .tf-list:nth-child(n) {
+        width: 220px;
+    }
+    .text-calc__left{
+        padding-right: 60px;
     }
 }
 
@@ -4383,6 +4448,51 @@ $circle-width: 0.075em;
     }
     .sm-links{
         margin-bottom: 40px;
+    }
+
+    .section-top-7 .title-2 {
+        max-width: 270px;
+        padding-top: 32px;
+        padding-bottom: 10px;
+    }
+    .section-top__img-07{
+        top: 200px;
+        width: 600px;
+    }
+    .section-top__img-07-2{
+        bottom: -15px;
+        margin-left: -30px;
+        width: 520px;
+    }
+    .text-calc {   
+        @include flex-direction(column-reverse);
+    }
+    .text-calc__right {
+        width: 100%;
+    }
+    .text-calc__left {
+        padding-right: 0;
+        width: 100%;
+        padding-top: 45px;
+    }
+    .calc-form{
+        padding-top: 32px;
+    }
+    .calc-form__title{
+        margin-bottom: 30px;
+    }
+    .calc-form__car {
+        margin-bottom: -8px;
+    }
+    .calc-form .tf-list:nth-child(n) {
+        width: 48%;
+    }
+    .text-calc .text-b {
+        text-align: left;
+    }
+    .block-instruction__left-5 {
+        background-size: 315px;
+        background-position: left bottom;
     }
 }
 
@@ -5565,6 +5675,41 @@ $circle-width: 0.075em;
     .sm-links li{
         padding-left: 24px;
     }
+
+    .section-top__img-07{
+        width: 360px;
+        top: 140px;
+        margin-left: -120px;
+    }
+    .section-top__img-07-2{
+        bottom: 190px;
+        width: 135px;
+        margin-left: -10px;
+    }
+    .calc-form {
+        padding: 30px 20px 0px;
+    }
+    .calc-form__title{
+        font-size: 20px;
+    }
+    .calc-form__car{
+        margin-bottom: 5px;
+    }
+    .calc-form .tf-list:nth-child(n) {
+        width: 100%;
+    }
+    .tf-bottom p{
+        display: none;
+    }
+    .text-calc__left{
+        padding-top: 35px;
+    }
+    .block-instruction__left-5 {
+        background-image: url(../img/bg-instruction-05-m.png);
+        background-size: auto;
+    }
+    
+    
 }
 
 @media screen and (max-width: 639px) {

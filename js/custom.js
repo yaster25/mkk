@@ -918,6 +918,11 @@ $(document).ready(function(){
         });
     }
     
+    $('.custom-select').selectric({
+         disableOnMobile: false,         
+         nativeOnMobile: true,
+     });
+    
     
     
  });
