@@ -3276,7 +3276,47 @@ $circle-width: 0.075em;
 .section-politics{
     margin-bottom: 80px;
 }
-
+.site-map__cols{
+     column-count: 3;
+}
+.sm-links{
+    margin-bottom: 70px;
+      -webkit-column-break-inside: avoid;
+            page-break-inside: avoid; /* Makes effect only in Firefox */
+                 break-inside: avoid; /* IE10+, Opera 11.1—12.1 */
+    li{       
+        padding-left: 28px;
+        font-size: 16px;
+        line-height: 30px;
+        color: rgba(71, 77, 80, 0.6); 
+        a{
+           color: inherit;            
+            &:hover{
+                color: $color-dark;
+            }
+        }
+        &.sm-links__title{
+             padding-top: 3px;
+            padding-bottom: 3px;
+            border-left: 4px solid $color-yellow;
+            padding-left: 24px;
+            margin-bottom: 20px;
+            font-weight: 500;
+                font-size: 22px;
+                line-height: 20px;
+                color: $color-dark;
+            a{
+              color: inherit;  
+                &:hover{
+                    color: $color-yellow;
+                }
+            }
+        }
+    }
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
 
 
 @media screen and (max-width: 1140px){
@@ -4337,6 +4377,12 @@ $circle-width: 0.075em;
     }
     .text-counters ol p:last-child {
         padding-bottom: 25px;
+    }
+    .site-map__cols {
+        column-count: 2;
+    }
+    .sm-links{
+        margin-bottom: 40px;
     }
 }
 
@@ -5504,6 +5550,21 @@ $circle-width: 0.075em;
         display: none;
     }
     
+
+    .sm-links li.sm-links__title {
+        padding-top: 2px;
+        padding-bottom: 2px;       
+        padding-left: 20px;
+        margin-bottom: 12px;       
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .sm-links{
+        margin-bottom: 35px;
+    }
+    .sm-links li{
+        padding-left: 24px;
+    }
 }
 
 @media screen and (max-width: 639px) {
@@ -5598,6 +5659,9 @@ $circle-width: 0.075em;
 
     .gallery__col{
         width: 33.33%;
+    }
+    .site-map__cols {
+        column-count: 1;
     }
 }
 
