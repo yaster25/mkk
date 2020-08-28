@@ -3175,6 +3175,109 @@ $circle-width: 0.075em;
 
     }
 }
+.title-num{
+    @include flexbox;
+    @include align-items(center);
+    color: $color-dark;
+    margin-bottom: 45px;
+    span{
+        font-weight: 600; font-size: 60px; width: 90px; position: relative; z-index: 2;
+        &:before { content: ""; position: absolute; z-index: -1; width: 56px; height: 56px; background: #FFE24F; border-radius: 50%; top: -35px; left: 15px; }
+    }
+    .text-title{ width: calc(100% - 90px); margin: 0;
+    padding: 0;}
+}
+
+.text-counters{
+    
+    b{
+       color: $color-dark;
+    }
+    > ol > li{
+            position: relative;
+            padding-bottom: 32px;
+            margin-bottom: 55px;
+        &:after{
+                content: "";
+                position: absolute;
+                left: 90px;
+                right: 0;
+                bottom: 0;
+                height: 1px;
+                background: #EDEDED;
+            }  
+    }
+    ol {
+        counter-reset: section;           
+        list-style-type: none;
+        > li{           
+            position: relative;
+            &:before {
+                counter-increment: section; 
+                content: counters(section,".") " ";
+                opacity: 0;
+            }
+            
+        }
+        ol {
+            padding-left: 90px;
+            > li{
+                padding-left: 45px;
+                border: none;
+                padding-bottom: 45px;
+                &:before{
+                    opacity: 1;
+                    color: $color-dark;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                        font-weight: 600;
+                }
+            }
+            
+            ol{
+                padding-left: 0;
+                padding-top: 45px;
+                margin-left: -45px;
+                margin-bottom: -45px;
+                >li{
+                    padding-left: 60px;
+                }
+            }
+        }
+        ul{
+          padding-top: 45px;
+        margin-bottom: -10px;
+        }
+        ul > li{
+           padding-left:25px;
+            position: relative;
+            margin-bottom: 10px;
+            &:before{
+                content: "\e903";
+                font-family: 'icomoon';
+                font-size: 11px;
+                color: #000;
+                position: absolute;
+                left: 0px;
+                top: 1px;
+            }
+        }
+        p{
+            padding-left: 90px;
+            &:last-child{
+                padding-bottom: 45px;
+            }
+        }
+    }
+
+    
+}
+.section-politics{
+    margin-bottom: 80px;
+}
+
+
 
 @media screen and (max-width: 1140px){
     .top-form{
@@ -4211,6 +4314,29 @@ $circle-width: 0.075em;
     }
     .doc__info{
         margin-bottom: 35px;
+    }
+    .title-num{
+        margin-bottom: 25px;
+    }
+    .text-counters ol ol > li{
+        padding-bottom: 25px;
+    }
+    .text-counters > ol > li {
+        padding-bottom: 22px;
+        margin-bottom: 25px;
+    }
+    .text-counters ol p{
+        padding-bottom: 25px;
+    }
+    .text-counters ol ol ol{
+        padding-top: 25px;
+            margin-bottom: -35px;
+    }
+    .text-counters ol ul {
+        padding-top: 25px;
+    }
+    .text-counters ol p:last-child {
+        padding-bottom: 25px;
     }
 }
 
@@ -5326,6 +5452,58 @@ $circle-width: 0.075em;
         padding-top: 10px;
         margin-bottom: 35px;
     }
+    .title-num{
+        margin-bottom: 18px;
+        min-height: 46px;
+    }
+    .title-num span{
+        font-size: 50px;
+    }
+    .title-num span:before {
+        width: 42px;
+        height: 42px;
+        top: -20px;
+        left: 15px;
+    }
+    .title-num .text-title{
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .text-counters ol ol {
+        padding-left: 0;
+    }
+    .text-counters ol ol > li {
+        padding-left: 0;
+        padding-bottom: 20px;
+        padding-top: 28px;
+    }
+    .text-counters > ol > li {
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+    }
+    .text-counters ol p {
+        padding-left: 0;
+    }
+    
+    .text-counters > ol > li:after{
+        left: 0;
+    }
+    .text-counters ol ol ol {
+        padding-left: 0;
+        padding-top: 20px;
+        margin-left: 0;
+        margin-bottom: -20px;
+    }
+    .text-counters ol ol ol > li {
+        padding-left: 0;
+    }
+    .text-counters ol ul{
+        padding-top: 15px;
+    }
+    .text-counters br+br+br{
+        display: none;
+    }
+    
 }
 
 @media screen and (max-width: 639px) {
