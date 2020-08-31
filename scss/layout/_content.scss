@@ -3299,8 +3299,8 @@ $circle-width: 0.075em;
 .sm-links{
     margin-bottom: 70px;
       -webkit-column-break-inside: avoid;
-            page-break-inside: avoid; /* Makes effect only in Firefox */
-                 break-inside: avoid; /* IE10+, Opera 11.1—12.1 */
+            page-break-inside: avoid;
+                 break-inside: avoid;
     li{       
         padding-left: 28px;
         font-size: 16px;
@@ -3366,7 +3366,6 @@ $circle-width: 0.075em;
         width: 230px;
     }
 }
-
 .section-top-7{
     .section-top__text{
         max-width: 300px;
@@ -3423,6 +3422,27 @@ $circle-width: 0.075em;
 .section-top__img-13-2{
     display: none;
 }
+.section-top-14{
+    background: url('../img/image-section-top-14.jpg') no-repeat center bottom;
+    background-size: cover;
+        background-size: 2050px;
+}
+.section-top-dark{
+    .breadcrumbs{
+        color: rgba(#fff, 0.4);
+    }
+    .breadcrumbs-item:after{
+        color: #fff;
+    }
+    .title, .title-2{
+        color: #fff;
+    }
+    .subtitle, .section-top__text{
+        color: rgba(#fff, 0.4);
+    }
+}
+
+
 
 @media screen and (max-width: 1140px){
     .top-form{
@@ -4596,6 +4616,9 @@ $circle-width: 0.075em;
     .section-top-13 .title-2{
         margin-top: -35px;
     }
+    .section-top-14 .title-2{
+        margin-top: -35px;
+    }
     .section-top__img-12{
         top: 160px;
         width: 300px;
@@ -4611,6 +4634,12 @@ $circle-width: 0.075em;
         width: 530px;
         margin-left: -20px;
     }
+    .section-top-14 {
+        background-size: 1900px;
+        background-position: 58% 76%;
+    }
+    
+    
     
     
 }
@@ -5887,6 +5916,10 @@ $circle-width: 0.075em;
         width: 280px;
         margin-left: -10px;
     }
+    .section-top-14 {
+        background-size: 1150px;
+        background-position: 79% 95%;
+    }
     
 }
 
@@ -5986,6 +6019,10 @@ $circle-width: 0.075em;
     .site-map__cols {
         column-count: 1;
     }
+
+    .section-top-14 {
+        background-position: 73% 95%;
+    }
 }
 
 @media screen and (max-width: 479px) {  
@@ -5999,6 +6036,10 @@ $circle-width: 0.075em;
     }
     .gallery__col{
         width: 50%;
+    }
+
+    .section-top-14 {
+        background-position: 68% 95%;
     }
 }
 
