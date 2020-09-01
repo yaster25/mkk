@@ -3396,7 +3396,6 @@ $circle-width: 0.075em;
     &.list-num li:after{
         top: 0;
     }
-
 }
 .section-top__img-09{
     top: 90px;
@@ -3464,7 +3463,10 @@ $circle-width: 0.075em;
     bottom: 0;
     margin-left: -90px;
 }
-
+.section-top__img-17{
+    bottom: 0;
+    margin-left: -35px;
+}
 
 
 @media screen and (max-width: 1140px){
@@ -4678,6 +4680,11 @@ $circle-width: 0.075em;
         width: 580px;
         bottom: 0;
         margin-left: -90px;
+    }
+    .section-top__img-17{
+        bottom: 0;
+        width: 500px;
+        margin-left: -75px;
     }
 }
 
@@ -5969,6 +5976,11 @@ $circle-width: 0.075em;
         width: 360px;
         margin-left: -190px;
         bottom: 0;
+    }
+    .section-top__img-17{
+        bottom: 0;
+        width: 320px;
+        margin-left: -155px;
     }
     
 }
