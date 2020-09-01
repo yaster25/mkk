@@ -3289,8 +3289,6 @@ $circle-width: 0.075em;
             }
         }
     }
-
-    
 }
 .section-politics{
     margin-bottom: 80px;
@@ -3450,18 +3448,21 @@ $circle-width: 0.075em;
         color: rgba(#fff, 0.4);
     }
 }
-
 .section-top__img-15{
     bottom: -450px;
     margin-left: -100px;
 }
 .text-calc + .form-order{
-        margin-top: 75px;
+    margin-top: 75px;
 }
 .list-column {
     &.list-num li{
         display: block;
     }
+}
+.section-top__img-16{
+    bottom: 0;
+    margin-left: -90px;
 }
 
 
@@ -4672,6 +4673,11 @@ $circle-width: 0.075em;
     }
     .text-calc + .form-order {
         margin-top: 45px;
+    }
+    .section-top__img-16{
+        width: 580px;
+        bottom: 0;
+        margin-left: -90px;
     }
 }
 
@@ -5958,7 +5964,12 @@ $circle-width: 0.075em;
     }
     .list-column_m1{
         column-count: 1;
-    }  
+    }      
+    .section-top__img-16{
+        width: 360px;
+        margin-left: -190px;
+        bottom: 0;
+    }
     
 }
 
