@@ -3491,12 +3491,18 @@ $circle-width: 0.075em;
     }
 }
 .section-top-20{
-    background: url('../img/image-section-top-20.png') no-repeat center center;
+    background: url('../img/image-section-top-20.jpg') no-repeat center center;
     background-size: cover;
 }
 .section_grey .subtitle{
     color: #474D50;
 }
+.section-top-21{
+    background: url('../img/image-section-top-21.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+
 
 @media screen and (max-width: 1140px){
     .top-form{
@@ -4749,6 +4755,11 @@ $circle-width: 0.075em;
     .section-top-20{
         background-color: #F9F9F9;
         background-size: auto 650px;
+        background-position: center bottom;
+    }
+    .section-top-21{
+        background-color: #f5f4ef;
+        background-size: auto 680px;
         background-position: center bottom;
     }
 }
@@ -6061,6 +6072,10 @@ $circle-width: 0.075em;
         background-size: auto 440px;
         background-position: 75% bottom;
     }
+    .section-top-21{
+        background-size: auto 420px;
+        background-position: 82% bottom;
+    }
 }
 
 @media screen and (max-width: 639px) {
@@ -6166,6 +6181,9 @@ $circle-width: 0.075em;
     .section-top-20 {
         background-position: 71% bottom;
     }
+    .section-top-21 {
+        background-position: 75% bottom;
+    }
 }
 
 @media screen and (max-width: 479px) {  
@@ -6186,6 +6204,9 @@ $circle-width: 0.075em;
     }
     .section-top-20 {
         background-position: 66% bottom;
+    }
+    .section-top-21 {
+        background-position: 69% bottom;
     }
 }
 
