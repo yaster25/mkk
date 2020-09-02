@@ -3467,6 +3467,10 @@ $circle-width: 0.075em;
     bottom: 0;
     margin-left: -35px;
 }
+.section-top__img-18{
+    bottom: 0;
+    margin-left: -175px;
+}
 
 
 @media screen and (max-width: 1140px){
@@ -4685,7 +4689,13 @@ $circle-width: 0.075em;
         bottom: 0;
         width: 500px;
         margin-left: -75px;
+    }    
+    .section-top__img-18{
+        width: 670px;
+        bottom: 0;
+        margin-left: -110px;
     }
+    
 }
 
 
@@ -5981,6 +5991,11 @@ $circle-width: 0.075em;
         bottom: 0;
         width: 320px;
         margin-left: -155px;
+    }
+    .section-top__img-18{
+        width: 405px;
+        bottom: 0;
+        margin-left: -205px;
     }
     
 }
