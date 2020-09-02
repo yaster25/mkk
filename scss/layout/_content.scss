@@ -3501,6 +3501,10 @@ $circle-width: 0.075em;
     background: url('../img/image-section-top-21.jpg') no-repeat center center;
     background-size: cover;
 }
+.section-top-22{
+    background: url('../img/image-section-top-22.jpg') no-repeat center center;
+    background-size: cover;
+}
 
 
 
@@ -4761,6 +4765,11 @@ $circle-width: 0.075em;
         background-color: #f5f4ef;
         background-size: auto 680px;
         background-position: center bottom;
+    } 
+    .section-top-22{
+        background-color: #ececea;
+        background-size: auto 670px;
+        background-position: 54% bottom;
     }
 }
 
@@ -6076,6 +6085,10 @@ $circle-width: 0.075em;
         background-size: auto 420px;
         background-position: 82% bottom;
     }
+    .section-top-22{
+        background-size: auto 430px;
+        background-position: 82% bottom;
+    }
 }
 
 @media screen and (max-width: 639px) {
@@ -6184,6 +6197,9 @@ $circle-width: 0.075em;
     .section-top-21 {
         background-position: 75% bottom;
     }
+    .section-top-22{
+        background-position: 75% bottom;
+    }
 }
 
 @media screen and (max-width: 479px) {  
@@ -6207,6 +6223,9 @@ $circle-width: 0.075em;
     }
     .section-top-21 {
         background-position: 69% bottom;
+    }
+    .section-top-22{
+        background-position: 68% bottom;
     }
 }
 
