@@ -651,7 +651,7 @@ ul {
     }
     &__text{
         margin-right: -40px;
-        padding-right: 30px;
+        padding-right: 10px;
         height: 90px;
         overflow: hidden;
         border-bottom: 1px solid #EDEDED;
@@ -661,7 +661,15 @@ ul {
         margin-bottom: 15px;
         span{
             white-space:nowrap;
-            padding-right: 10px;
+            padding-right: 7px;
+        }
+        a{
+            color:inherit;
+            white-space:nowrap;
+            margin-right: 7px;
+            &:hover{
+                color: $color-dark;
+            }
         }
     }
     &__link{
@@ -928,7 +936,7 @@ ul {
     }
     &__right{
         width: calc(100% - 400px);
-        padding-left: 90px;
+        padding-left: 80px;
     }
     &__text{
         font-size: 16px;
@@ -1279,7 +1287,8 @@ $circle-width: 0.075em;
         width: calc(100% - 555px);
         padding-right: 110px;
         .text{
-                margin-bottom: 50px;
+            margin-bottom: 45px;
+            margin-top: -20px;
         }
     }
     &__right{
@@ -1599,6 +1608,9 @@ $circle-width: 0.075em;
     }
     .title{
             margin-bottom: 10px;
+    }
+    .title-2{
+        margin-bottom: 50px;
     }
 }
 
@@ -3508,6 +3520,7 @@ $circle-width: 0.075em;
 
 
 
+
 @media screen and (max-width: 1140px){
     .top-form{
         width: 495px;
@@ -3522,7 +3535,6 @@ $circle-width: 0.075em;
     }
     .top-slider__inner {
         max-width: 600px;
-        padding-top: 55px;
     }
     .top-slider__text-1{
         display: none;
@@ -3674,7 +3686,6 @@ $circle-width: 0.075em;
     .order-block-2 .order-block__title{
         margin-bottom: 0;
     }
-
     .section-404{
         img{
             max-width:600px;
@@ -3683,7 +3694,6 @@ $circle-width: 0.075em;
     .section-404 .title{
         font-size: 60px;
     }
-
     .calc-form{
         padding-left: 30px;
         padding-right: 30px;
@@ -3693,6 +3703,9 @@ $circle-width: 0.075em;
     }
     .text-calc__left{
         padding-right: 60px;
+    }
+    .section-compare__left .text{
+        margin-top: 0;
     }
 }
 
@@ -3999,6 +4012,7 @@ $circle-width: 0.075em;
     }
     .section-compare__left .text {
         margin-bottom: 45px;
+        margin-top: 0;
     }
     .item-review {
         padding: 45px 200px 30px 30px;
@@ -4770,6 +4784,23 @@ $circle-width: 0.075em;
         background-color: #ececea;
         background-size: auto 670px;
         background-position: 54% bottom;
+    }
+
+    .section-top .form-order-wrapper {
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        padding: 25px 20px;
+        max-width: 300px;
+    }
+    .section-top{
+        .form__input-wrap {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        .form-order-wrapper .btn {
+            width: 100%;
+        }
     }
 }
 
