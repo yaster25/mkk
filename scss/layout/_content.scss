@@ -211,6 +211,9 @@ ul {
         &:hover{
            color: $color-yellow;
         }
+        &:last-child{
+            border-right: 0;
+        }
     }    
 }
 
@@ -4716,25 +4719,25 @@ $circle-width: 0.075em;
     .text-calc + .form-order {
         margin-top: 45px;
     }
-    .section-top__img-16{
-        width: 580px;
+    .section-top__img-16 {
+        width: 520px;
         bottom: 0;
-        margin-left: -90px;
+        margin-left: -260px;
     }
     .section-top__img-17{
         bottom: 0;
-        width: 500px;
-        margin-left: -75px;
+        width: 450px;
+        margin-left: -225px;
     }    
     .section-top__img-18{
-        width: 670px;
+        width: 610px;
         bottom: 0;
-        margin-left: -110px;
+        margin-left: -305px;
     }
     .section-top__img-19{
-         width: 730px;
+        width: 700px;
         bottom: -120px;
-        margin-left: -150px;
+        margin-left: -350px;
     }
     .text-column{
         @include flex-wrap(wrap);
@@ -4753,26 +4756,24 @@ $circle-width: 0.075em;
            padding-bottom: 35px;
         }
         br{
-            display: none;
-            
+            display: none;            
         }
     }
     .section-top-20{
         background-color: #F9F9F9;
-        background-size: auto 650px;
-        background-position: center bottom;
+        background-size: auto 620px;
+        background-position: 72% bottom;
     }
     .section-top-21{
         background-color: #f5f4ef;
-        background-size: auto 680px;
-        background-position: center bottom;
+        background-size: auto 590px;
+        background-position: 70% bottom;
     } 
     .section-top-22{
         background-color: #ececea;
-        background-size: auto 670px;
-        background-position: 54% bottom;
+        background-size: auto 610px;
+        background-position: 74% bottom;
     }
-
     .section-top .form-order-wrapper {
         -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -4785,6 +4786,9 @@ $circle-width: 0.075em;
     }
     .section-top-auto .form-order{
         bottom: 80px;
+    }
+    .list-num li{
+        padding-left: 70px;
     }
 }
 
@@ -4923,6 +4927,7 @@ $circle-width: 0.075em;
         height: 93px;
         border-bottom: 1px solid #ededed !important;
         position: relative;
+        border-right: 0;
         &:after{
             content: "";
             width: 4px;
