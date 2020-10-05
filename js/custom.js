@@ -380,7 +380,7 @@ $(document).ready(function(){
     
     $.mask.definitions['9'] = false;
     $.mask.definitions['q'] = "[0-9]";
-    $(".input-phone").mask("+7 495 qqq-qq-qq", {placeholder:"_"});
+    $(".input-phone").mask("+7 qqq qqq-qq-qq", {placeholder:"_"});
     
     $('.input-phone').focus(function() {   
         $(this).parents('.form__input-mask').addClass('filled');
